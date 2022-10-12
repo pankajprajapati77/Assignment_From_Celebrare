@@ -13,18 +13,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bitter&family=Fjalla+One&family=Montserrat:ital,wght@0,200;0,400;1,300&family=Oswald:wght@200&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
 <body>
-    <nav class="navbar">
-        <div class="navbar_lists">
-            <li class="company_name">
-              <img src="./Logo.png">
-            </li>
-            <li>Wedding cards</li>
+    <div class="nav-bar">
+      <img src="./Logo.png">
+      <div class="menu-right">
+        <span onClick="myFunction()">&#9776;</span>
+         <ul id="menu">
+          <li>Wedding cards</li>
             <li>Birthday Cards</li>
             <li>Feeling Cards</li>
             <li>Annivarsay Cards</li>
-            <li>Login|Signup</li>
-        </div>
-    </nav>
+            <li>Login|Signup</li>   
+         </ul>
+      </div>
+    </div>
         <div class="first_background_image">
             <img src="./Background.jpg" class="first_background" >
              <h1 class="digital">Digital card Details</h1>
@@ -49,14 +50,12 @@
               </div>
             </div>
           </div>
-          <div class="swiper-pagination">
-
-          </div>
+          <div class="swiper-pagination"></div>
                 <div class="Card_title_amount">
                   <h1 class="card_title">Card Title</h1>
                   <div class="amount">
                     <h1 class="amount_one">$499 </h1>
-                    <h1 class="amount_two">$2000<i class="fa-solid fa-xmark"></i></h1>
+                    <h1 class="amount_two">$2000<img src="./line logo.png" width="54" height="34"  class="line_black"></h1>
                     <h1 class="amount_three">75% OFF</h1>
                   </div>
                   <pre class="pre_amount">Donec eu ornare mi. Sed finibus
@@ -66,6 +65,9 @@ condimentum tortor ac elit feugiat
 iaculis. Aenean mauris nisl, blandit</pre>
                   <button class="button_offer">Try this Card</button>
                   </div>
+          </div>
+          <div class="features">
+            <h1 class="feature_section2">Features</h1>
           </div>
           <div class="section_two">
             <div class="section_create card">
@@ -85,16 +87,6 @@ after purchase also</pre>
             </div>
           </div>
           <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-          <script>
-            var swiper = new Swiper(".mySwiper", {
-              slidesPerView: 2,
-              spaceBetween: 20,
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-            });
-          </script>
-          
+          <script src="./index.js"></script>
   </body>
 </html>
